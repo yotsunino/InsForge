@@ -15,7 +15,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
     "typecheck": "turbo run typecheck",
     "clean": "turbo run clean && rm -rf node_modules",
-    "clean:cache": "turbo run clean && rm -rf node_modules .turbo"
+    "clean:cache": "turbo run clean && rm -rf node_modules .turbo",
+    "deps:check": "pnpm outdated --recursive"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
