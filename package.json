@@ -16,7 +16,8 @@
     "typecheck": "turbo run typecheck",
     "clean": "turbo run clean && rm -rf node_modules",
     "clean:cache": "turbo run clean && rm -rf node_modules .turbo",
-    "deps:check": "pnpm outdated --recursive"
+    "deps:check": "pnpm outdated --recursive",
+    "deps:update": "pnpm update --recursive --interactive"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
